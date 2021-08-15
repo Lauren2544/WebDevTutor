@@ -1,0 +1,53 @@
+<html lang = "en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web Basics</title>
+    <link rel="shortcut icon" href="purpleicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="index.php"><img class="house" src = "house.png"></a></li>
+      <li><a href="HTMLCSS.html">HTML/CSS</a></li>
+      <li><a href="Databases.html">Databases</a></li>
+      <li><a href="PHP.html">PHP</a></li>
+    </ul>
+
+
+    <div class="box">
+      <p class="heading">Creating Your First Website</p>
+      
+      <p class="paragraph"><b>Installing Apache and PHP  - macOS Big Sur </b><br>
+      Step 1: First press <i>command space</i> to seach and open your terminal. <br>
+      Step 2: Apache should come preinstalled so to start the Apache server just type the following into your terminal, you may also need to type your computers password if you are prompted <pre>sudo apachectl start</pre>  <br> 
+      Step 3: Next open a broswer of your choice and type localhost, you should see the words "It works!" appear on your screen <br>
+      Step 4: Now type the code below into your terminal and uncomment these three lines: <pre>sudo nano /etc/apache2/httpd.conf</pre> </p>
+      <img src="8.png" style="width:30em; height:20em;"/>
+      <img src="7.png" style="width:30em; height:20em;"/><br>
+      <p class="paragraph">
+      Step 5: Press <i>control x</i> followed by <i>y</i> and <i>enter</i> to save and exit <br>
+      Step 6: Check your Apache version by typing the following into the terminal and write this down for later <pre>httpd -v</pre><br>
+      Step 7: Now type the following into your terminal replacing <b>username</b> with your computers name. To find this name go to settings> Users & Groups> click the lock> enter your computer password> right click on the current user> click advance options> find where it says "Home directory: /Users/<b>username</b>/" this is your username <pre>sudo nano "/etc/apache2/users/<b>username</b>.conf"</pre><br> 
+      Step 8: Next type this into the file and then press <i>control x</i>, <i>y</i> and <i>enter</i> to save and quit: </p>
+      <img src="9.png" style="width:20em; height:5em;"/><br>
+      <p class="paragraph">
+      Step 9: Now set the files permission settings by typing the following: <pre>sudo chmod 644 "/etc/apache2/users/username.conf"</pre><br>
+      Step 10: Now type the code below into your terminal <pre>sudo nano /etc/apache2/extra/httpd-userdir.conf</pre> 
+      Step 11: Next uncomment this line: <pre>Include /private/etc/apache2/users/*.conf</pre>
+      Step 12: Press <i>control x</i> followed by <i>y</i> and <i>enter</i> to save and exit <br>
+      Step 13: Then open the httpd.conf file in your terminal again: <pre>sudo nano /etc/apache2/httpd.conf</pre>
+      Step 14: Now press <i>control w</i> and search for all instances of the word "override" and change "None" to "All"<br>
+      Step 15: Press <i>control x</i> followed by <i>y</i> and <i>enter</i> to save and exit <br>
+      Step 16: Now type the following and press enter to restart your Apache server in your terminal<pre>sudo apachectl restart</pre>
+      Step 17: Finally check that your sites folder exists in your Users/<b>username</b>/ directory
+      </p> 
+    </div>
+
+    
+    

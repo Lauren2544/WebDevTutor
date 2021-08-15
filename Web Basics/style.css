@@ -1,0 +1,104 @@
+/* sets the background color*/
+body{
+    background-color:#cbbce6;
+}
+
+/* home icon*/
+.house{
+  width:25px;
+  height:25px;
+}
+
+/* formats the menu bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303030;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 5px 2.5px grey;
+} 
+li {
+  float: left;
+  padding-left:5vw;
+  font-family: 'Andika';
+  font-size:18px;
+  font-weight:bold;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  border-color: #cbbce6;
+  border-style: none none solid none ;
+  height: 13px;
+}
+
+/*formats the welcome text*/
+.heading{
+    font-family: 'Andika';
+    font-size: 20px;
+    color:  #303030;
+}
+.paragraph{
+    font-family: 'Andika';
+    font-size: 15px;
+    color:  #303030;
+}
+
+/*contact form*/  
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #303030;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: black;
+}
+
+/*formats the grey boxes around the text*/
+.box {
+  border-width: 10px 10px 10px 10px; /* top right bottom left */
+  border-style: solid;
+  border-color: #303030;
+  background-color: lightgrey;
+  width: 90%;
+  padding: 10px;
+  margin: 40px;
+}
+
+/* formats the text in the form*/
+.textwithin{
+  padding-left: 1vw;
+  padding-right:1vw;
+  font-size: 2vw;
+}
+
+pre {
+    background: rgba(0,0,0,0.03);
+    color: rgba(0,0,0,0.9);
+    overflow: auto;
+    padding: 1.2rem 1.5rem;
+    word-wrap: normal;
+}
+
+
